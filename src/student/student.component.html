@@ -1,0 +1,85 @@
+<form>
+  <div class="form">
+    <div class="title-div">
+      <h1>CONCORD</h1>
+      <p>This is a google form .Employee Personal Details</p>
+      <p class="required">*Required</p>
+    </div>
+
+    <div class="name-div">
+      <div class="name">FIRST NAME<span class="required">*</span></div>
+      <div class="input-div">
+        <input
+          type="text"
+          name="answer"
+          placeholder="Your answer"
+          [(ngModel)]="formData.firstName"
+        />
+      </div>
+    </div>
+    <div class="name-div">
+      <div class="name">LAST NAME<span class="required">*</span></div>
+      <div class="input-div">
+        <input
+          type="text"
+          name="answer"
+          placeholder="Your answer"
+          [(ngModel)]="formData.lastName"
+        />
+      </div>
+    </div>
+    <div class="name-div">
+      <div class="name">DOMAIN<span class="required">*</span></div>
+      <div class="input-div">
+        <input
+          type="text"
+          name="answer"
+          placeholder="Your answer"
+          [(ngModel)]="formData.domain"
+        />
+      </div>
+    </div>
+    <div class="name-div">
+      <div class="name">EXPERIENCE<span class="required">*</span></div>
+      <div class="input-div">
+        <input
+          type="text"
+          name="answer"
+          placeholder="Your answer"
+          [(ngModel)]="formData.experience"
+        />
+      </div>
+    </div>
+    <div class="name-div">
+      <div class="name">CTC<span class="required">*</span></div>
+      <div class="input-div">
+        <input
+          type="text"
+          name="answer"
+          placeholder="Your answer"
+          [(ngModel)]="formData.ctc"
+        />
+      </div>
+    </div>
+    <div class="name-div">
+      <div class="name">ADDRESS<span class="required">*</span></div>
+      <div class="input-div">
+        <input
+          type="text"
+          name="answer"
+          placeholder="Your answer"
+          [(ngModel)]="formData.address"
+        />
+      </div>
+    </div>
+    <span>
+      <button (click)="onBtnClick()" class="btn" type="button" name="submit">
+        Submit
+      </button>
+    </span>
+
+    <span>
+      <button class="btn" type="reset" name="reset">Reset</button>
+    </span>
+  </div>
+</form>
